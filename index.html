@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Задача на дом "HTML" часть 2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!--
+        Задача на дом "HTML" часть 2
+
+Сделать страницу, в которой есть:
+
+    картинки,
+    таблица с colspan и rowspan,
+    абзацы,
+    заголовки,
+    ссылки (пусть одна из них ведет на страницу с формой из п.1),
+    горизонтальные линии
+    и переводы строки
+    и что еще угодно
+
+Подключить файл CSS и сделать минимальное оформление
+-->
+    <header>
+        <h1>Веб-технологии 2025</h1>
+        <nav>
+            <a href="form.html">Регистрация</a> | <a href="https://academ-it-school.ru/" target="_blank">Сайт школы</a>
+        </nav>
+    </header>
+
+    <section>
+
+        <hr>
+
+        <h2>Вступление</h2>
+        <p>В 2025 году веб-технологии достигли беспрецедентного уровня производительности за счет повсеместного внедрения протокола HTTP/3 и форматов нового поколения.</p>
+        <p>Браузерные движки становятся всё более оптимизированными, стирая границы между нативными приложениями и веб-страницами в облаке.</p>
+        <p>Сегодня создание сайта — это не просто написание кода, а проектирование сложной экосистемы, ориентированной на мгновенный отклик и абсолютную доступность.</p>
+
+        <h2>Основные этапы веб-разработки</h2>
+        <ol>
+            <li>
+                <span>Планирование и анализ:</span>
+                <br>Определение целей проекта, целевой аудитории и функциональных требований.
+            </li>
+            <li>
+                <span>Проектирование (UX/UI):</span>
+                <br>Создание прототипов, информационной архитектуры и визуального дизайна интерфейса.
+            </li>
+            <li>
+                <span>Верстка (Frontend):</span>
+                <br>Преобразование макетов в код с использованием HTML5, CSS3 и JavaScript.
+            </li>
+            <li>
+                <span>Программирование (Backend):</span>
+                <br>Разработка серверной логики, работа с базами данных и API.
+            </li>
+            <li>
+                <span>Тестирование:</span>
+                <br>Проверка корректности работы кода, кроссбраузерности и адаптивности.
+            </li>
+            <li>
+                <span>Развертывание (Deployment):</span>
+                <br>Перенос сайта на хостинг и настройка доменного имени.
+            </li>
+            <li>
+                <span>Поддержка и оптимизация:</span>
+                <br>Мониторинг ошибок, обновление контента и SEO-продвижение.
+            </li>
+        </ol>
+
+        <h2>Технологии front-end разработки</h2>
+        <img src="logos.png" alt="Логотипы технологий front-end разработки" title="Логотипы технологий front-end разработки" class="logos-img">
+
+        <hr>
+
+        <h2>Таблица браузеров и движков</h2>
+        <table class="data-table">
+            <thead>
+                <tr>
+                    <th>Браузерный движок</th>
+                    <th>Основные разработчики</th>
+                    <th>Популярные браузеры</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td rowspan="4" class="engine-cell">Blink</td>
+                    <td>Google</td>
+                    <td>Google Chrome</td>
+                </tr>
+                <tr>
+                    <td>Microsoft</td>
+                    <td>Microsoft Edge</td>
+                </tr>
+                <tr>
+                    <td>Opera Software</td>
+                    <td>Opera</td>
+                </tr>
+                <tr>
+                    <td>Brave Software</td>
+                    <td>Brave Browser</td>
+                </tr>
+                <tr>
+                    <td rowspan="2" class="engine-cell">Gecko</td>
+                    <td>Mozilla Foundation</td>
+                    <td>Mozilla Firefox</td>
+                </tr>
+                <tr>
+                    <td>The Tor Project / LibreWolf Team</td>
+                    <td>Tor Browser, LibreWolf</td>
+                </tr>
+                <tr>
+                    <td class="engine-cell">WebKit</td>
+                    <td>Apple Inc.</td>
+                    <td>Safari (macOS, iOS, iPadOS)</td>
+                </tr>
+                <tr>
+                    <td class="engine-cell">Goanna (форк Gecko)</td>
+                    <td>Moonchild Productions</td>
+                    <td>Pale Moon</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td class="center-text" colspan="3">Данные актуальны на декабрь 2025 года.</td>
+                </tr>
+            </tfoot>
+        </table>
+
+        <h2>Ключевые изменения в 2025 году:</h2>
+        <ul>
+            <li>
+                <span>Blink:</span> Укрепил свои позиции как самый массовый движок. На нем работают не только Chrome и Edge, но и специализированные ИИ-браузеры, а также российские решения (Яндекс Браузер).
+            </li>
+            <li>
+                <span>Gecko:</span> Остается единственной крупной независимой альтернативой движку Google, ориентированной на приватность и открытый код.
+            </li>
+            <li>
+                <span>WebKit:</span> По-прежнему является единственным разрешенным движком для всех браузеров на платформе iOS/iPadOS (включая мобильные версии Chrome и Firefox) в силу политик Apple.
+            </li>
+        </ul>
+
+        <hr>
+
+    </section>
+
+    <footer>
+        <p>© 2025 Егор Киллер для Academ IT School</p>
+    </footer>
+	
+</body>
+</html>

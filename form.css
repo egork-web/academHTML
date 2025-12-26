@@ -1,0 +1,125 @@
+body {
+    padding: 20px;
+    margin: 0;
+    background-color: #01001b;
+    background-image: url("bg-image.png");
+    background-size: cover;
+    font-family: "Segoe UI", Tahoma, Verdana, sans-serif;
+}
+
+.main-form {
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 450px;
+    padding: 25px;
+    margin: 15px auto; 
+    border-radius: 8px;
+    background: #ffffff;
+}
+
+h2 {
+    margin-top: 0;
+    color: #333333;
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555555;
+    font-weight: bold;
+}
+
+input[type="text"], 
+textarea, 
+select {
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 100%;
+    min-width: 100%;
+    padding: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+}
+
+textarea {
+    min-height: 2.5rem;
+}
+
+.checkbox-group, .radio-group {
+    display: block;
+    font-size: 0; /* убирает лишние отступы между inline-block элементами (фикс пробелов) */
+}
+
+.checkbox-group input, 
+.radio-group input {
+    display: inline-block;
+    margin-bottom: 1px;
+    font-size: 14px;
+    vertical-align: middle;
+}
+
+.checkbox-group label,
+.radio-group label {
+    display: inline-block;
+    margin-right: 15px;
+    margin-left: 5px;
+    margin-bottom: 0px;
+    font-size: 14px;
+    font-weight: normal;
+    vertical-align: middle;
+    cursor: pointer;
+    user-select: none;
+}
+
+select {
+    padding-left: 6px;
+    padding-right: 6px;
+}
+
+.multiselect {
+    padding: 0px;
+}
+
+.multiselect option {
+    padding: 3px 10px 2px;
+}
+
+.submit-btn {
+    display: block;
+    width: 140px;
+    padding: 12px;
+    border: none;
+    margin: 30px auto 0 auto;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: #ffffff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.submit-btn:hover {
+    background-color: #0056b3;
+}
+
+.form-footer {
+    margin-top: 15px;
+    text-align: center;
+}
+
+.back-link {
+    display: inline-block;
+    color: #007bff;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.back-link:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}

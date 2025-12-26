@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Задача на дом "HTML" часть 1</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+<!--
+        Задача на дом "HTML" часть 1
+
+Сделать страницу с формой, в которой будут следующие виды элементов:
+
+    текстовые поля ввода,
+    многострочные поля ввода,
+    чекбоксы,
+    радио-баттоны,
+    выпадающие списки с единичным и множественным выбором,
+    кнопка
+
+Подключить файл CSS и сделать минимальное оформление
+-->
+    <form class="main-form">
+    
+        <h2>Регистрация пользователя</h2>
+        
+        <div class="form-group">
+            <label for="username">Имя пользователя *:</label>
+            <input type="text" id="username" name="username" placeholder="Ваш будущий никнейм" autocomplete="off" required>
+        </div>
+        
+        <div class="form-group">
+            <label for="firstname">Имя:</label>
+            <input type="text" id="firstname" name="firstname" placeholder="Ваше имя">
+        </div>
+        
+        <div class="form-group">
+            <label for="lastname">Фамилия:</label>
+            <input type="text" id="lastname" name="lastname" placeholder="Ваша фамилия">
+        </div>
+        
+        <div class="form-group">
+            <label for="bio">О себе:</label>
+            <textarea id="bio" name="bio" rows="4" placeholder="Расскажите о себе..."></textarea>
+        </div>
+        
+        <div class="form-group">
+            <label>Интересы:</label>
+            <div class="checkbox-group">
+                <input type="checkbox" id="it" name="interest" value="it">
+                <label for="it">IT</label>
+                <input type="checkbox" id="art" name="interest" value="art">
+                <label for="art">Искусство</label>
+                <input type="checkbox" id="music" name="interest" value="music">
+                <label for="music">Музыка</label>
+                <input type="checkbox" id="sport" name="interest" value="sport">
+                <label for="sport">Спорт</label>
+            </div>
+        </div>
+        
+        <div class="form-group">
+            <label>Пол:</label>
+            <div class="radio-group">
+                <input type="radio" id="male" name="gender" value="male" checked>
+                <label for="male">Мужской</label>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Женский</label>
+            </div>
+        </div>
+        
+        <div class="form-group">
+            <label for="country">Страна:</label>
+            <select id="country" name="country">
+                <option value="ru">Россия</option>
+                <option value="kz">Казахстан</option>
+                <option value="by">Беларусь</option>
+            </select>
+        </div>
+        
+        <div class="form-group">
+            <label for="skills">Навыки (удерживайте Ctrl):</label>
+            <select class="multiselect" size="6" id="skills" name="skills" multiple>
+                <option value="html">HTML</option>
+                <option value="css">CSS</option>
+                <option value="js">JavaScript</option>
+                <option value="python">Python</option>
+                <option value="java">Java</option>
+                <option value="sql">SQL</option>
+            </select>
+        </div>
+        
+        <button type="submit" class="submit-btn">Отправить</button>
+        
+        <div class="form-footer">
+            <a href="index.html" class="back-link">Вернуться на главную страницу</a>
+        </div>
+        
+    </form>
+</body>
+</html>
