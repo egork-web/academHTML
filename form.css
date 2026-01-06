@@ -5,6 +5,7 @@ body {
     background-image: url("bg-image.png");
     background-size: cover;
     font-family: "Segoe UI", Tahoma, Verdana, sans-serif;
+    font-size: 16px;
 }
 
 .main-form {
@@ -14,12 +15,12 @@ body {
     padding: 25px;
     margin: 15px auto; 
     border-radius: 8px;
-    background: #ffffff;
+    background: #fff;
 }
 
 h2 {
     margin-top: 0;
-    color: #333333;
+    color: #333;
     text-align: center;
 }
 
@@ -27,11 +28,14 @@ h2 {
     margin-bottom: 15px;
 }
 
-label {
-    display: block;
+.form-group > label,
+.form-group legend {
+    display: inline-block;
     margin-bottom: 5px;
-    color: #555555;
+    color: #555;
     font-weight: bold;
+    padding: 0;
+    cursor: default;
 }
 
 input[type="text"], 
@@ -40,15 +44,14 @@ select {
     display: block;
     box-sizing: border-box;
     width: 100%;
-    max-width: 100%;
-    min-width: 100%;
     padding: 10px;
-    border: 1px solid #cccccc;
+    border: 1px solid #ccc;
     border-radius: 4px;
 }
 
 textarea {
     min-height: 2.5rem;
+    resize: vertical;
 }
 
 .checkbox-group, .radio-group {
@@ -56,25 +59,29 @@ textarea {
     font-size: 0; /* убирает лишние отступы между inline-block элементами (фикс пробелов) */
 }
 
+.form-group fieldset {
+    padding: 0;
+    border: 0;
+    margin: 0;
+}
+
 .checkbox-group input, 
 .radio-group input {
     display: inline-block;
-    margin-bottom: 1px;
+    margin: 0 8px 0 0;
     font-size: 14px;
-    vertical-align: middle;
+    vertical-align: -10%;
 }
 
 .checkbox-group label,
 .radio-group label {
     display: inline-block;
-    margin-right: 15px;
-    margin-left: 5px;
-    margin-bottom: 0px;
+    margin: 0 15px 0 4px;
     font-size: 14px;
     font-weight: normal;
-    vertical-align: middle;
     cursor: pointer;
     user-select: none;
+    color: #555;
 }
 
 select {
@@ -83,7 +90,7 @@ select {
 }
 
 .multiselect {
-    padding: 0px;
+    padding: 0;
 }
 
 .multiselect option {
@@ -95,10 +102,10 @@ select {
     width: 140px;
     padding: 12px;
     border: none;
-    margin: 30px auto 0 auto;
+    margin: 30px auto 0;
     border-radius: 4px;
     background-color: #007bff;
-    color: #ffffff;
+    color: #fff;
     font-size: 16px;
     cursor: pointer;
 }
